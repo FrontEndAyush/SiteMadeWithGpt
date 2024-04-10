@@ -1,0 +1,50 @@
+
+
+nav{
+  background-color: #333;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjusted padding */
+
+  color: #fff;
+  width: 80%; /* Set width to 80% */
+  margin: 0 auto; /* Center the navbar */
+}
+
+.brand {
+  font-size: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  padding: 0 15px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.tab:hover {
+  background-color: #555; /* Hover background color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.join-button {
+  padding: 8px 20px; /* Adjusted padding */
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.join-button:hover {
+  background-color: #0056b3; /* Hover background color */
+}

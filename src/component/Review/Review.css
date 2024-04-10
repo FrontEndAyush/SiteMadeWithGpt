@@ -1,0 +1,48 @@
+.review-page {
+  padding: 20px;
+}
+
+.review-title {
+  font-weight: bold;
+  font-size: 50px; /* Set font size to 72px */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.review {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 15px;
+}
+
+.review .left,
+.review .right {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.review .left img,
+.review .right img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.review .left p,
+.review .right p {
+  margin-top: 10px;
+}
+
+.review .left .name,
+.review .right .name {
+  font-weight: bold;
+}

@@ -1,0 +1,46 @@
+.hero-section {
+  /* Example background color */
+  padding: 50px 20px; /* Adjusted padding */
+  display: flex; /* Add flex display */
+  height: calc(100vh - 80px); /* Subtract navbar height from viewport height */
+  width: 100%; /* Set width to 80% */
+  margin: 0 auto; /* Center the hero section */
+  justify-content: center;
+}
+
+.left-content {
+  margin-top: 100px;
+  width: 45%; /* Covering 40% width */
+  padding: 0 20px; /* Adjusted padding */
+  text-align: center; /* Center text */
+}
+
+.right-content {
+  flex: 1; /* Take remaining space */
+}
+.hero {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+.welcome-text {
+  color: blue; /* Set text color to blue */
+}
+
+h1 {
+  margin: 10px 0; /* Adjusted margin */
+}
+
+.join-button {
+  padding: 8px 35px; /* Adjusted padding */
+  border: none;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.join-button:hover {
+  background-color: #0056b3; /* Hover background color */
+}
