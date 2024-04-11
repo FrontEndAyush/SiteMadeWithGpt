@@ -1,10 +1,17 @@
-import React from "react";
-import "./Navbar.css"; // Assuming you have a CSS file for styling
+import React, { useState } from "react";
+import "./Navbar.css";
+import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav>
-      <div className="navbar">
+      <div className={`navbar ${isMenuOpen ? "active" : ""}`}>
         <div className="brand">ZimmyChu</div>
         <div className="tabs">
           <a href="#" className="tab">
@@ -21,6 +28,9 @@ const Navbar = () => {
           </a>
         </div>
         <button className="join-button">Join Us</button>
+        <div className="hamburger" onClick={toggleMenu}>
+          <MdOutlineMenu />
+        </div>
       </div>
     </nav>
   );

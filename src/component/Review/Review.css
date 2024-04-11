@@ -4,22 +4,22 @@
 
 .review-title {
   font-weight: bold;
-  font-size: 50px; /* Set font size to 72px */
-  text-align: center; /* Center the text */
+  font-size: 50px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .review-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .review {
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .review .left,
@@ -45,4 +45,21 @@
 .review .left .name,
 .review .right .name {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .review-title {
+    font-size: 36px;
+  }
+
+  .review {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review .left,
+  .review .right {
+    width: 100%;
+    max-width: 400px;
+  }
 }

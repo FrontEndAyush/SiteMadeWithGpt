@@ -1,46 +1,66 @@
 .hero-section {
-  /* Example background color */
-  padding: 50px 20px; /* Adjusted padding */
-  display: flex; /* Add flex display */
-  height: calc(100vh - 80px); /* Subtract navbar height from viewport height */
-  width: 100%; /* Set width to 80% */
-  margin: 0 auto; /* Center the hero section */
+  padding: 50px 20px;
+  display: flex;
+  height: calc(100vh - 80px);
+  width: 100%;
+  margin: 0 auto;
   justify-content: center;
+  flex-wrap: wrap; /* Add this line to make the content wrap on smaller screens */
 }
 
 .left-content {
   margin-top: 100px;
-  width: 45%; /* Covering 40% width */
-  padding: 0 20px; /* Adjusted padding */
-  text-align: center; /* Center text */
+  width: 45%;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .right-content {
-  flex: 1; /* Take remaining space */
+  flex: 1;
 }
+
 .hero {
   width: 100%;
   background-color: #f0f0f0;
 }
+
 .welcome-text {
-  color: blue; /* Set text color to blue */
+  color: blue;
 }
 
 h1 {
-  margin: 10px 0; /* Adjusted margin */
+  margin: 10px 0;
 }
 
 .join-button {
-  padding: 8px 35px; /* Adjusted padding */
+  padding: 8px 35px;
   border: none;
   margin-top: 10px;
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
-  border-radius: 20px; /* Rounded corners */
-  transition: all 0.3s ease; /* Smooth transition */
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
 .join-button:hover {
-  background-color: #0056b3; /* Hover background color */
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto; /* Set the height to auto on smaller screens */
+    flex-direction: column; /* Stack the content vertically on smaller screens */
+    align-items: center; /* Center the content horizontally on smaller screens */
+  }
+
+  .left-content {
+    width: 100%; /* Set the width to 100% on smaller screens */
+    margin-top: 50px; /* Reduce the top margin on smaller screens */
+  }
+
+  .right-content {
+    width: 100%; /* Set the width to 100% on smaller screens */
+    margin-top: 50px; /* Add top margin on smaller screens */
+  }
 }
